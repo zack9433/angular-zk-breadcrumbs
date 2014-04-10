@@ -100,12 +100,12 @@
         }
       };
     })
-    .directive("breadcrumbs", function(breadcrumbService) {
+    .directive("zkBreadcrumbs", function(breadcrumbService) {
       return {
         restrict: 'EA',
         replace: true,
         priority: 100,
-        templateUrl: '/template/common/breadcrumbs.html',
+        templateUrl: 'angular-zk-breadcrumbs.html',
         link: function(scope) {
           breadcrumbService.generate();
           scope.breadcrumbList = breadcrumbService.list();
