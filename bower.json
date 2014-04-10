@@ -1,0 +1,25 @@
+{
+  "name": "angular-zk-breadcrumbs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/zack9433/angular-zk-breadcrumbs.git",
+  "description": "Breadcrumbs for Angular.js applications",
+  "main": "angular-zk-breadcrumbs.js",
+  "keywords": [
+    "angular.js",
+    "breadcrumbs",
+    "directive"
+  ],
+  "authors": [
+    "Zack Yang"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "demo.html",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "angular": "~1"
+  }
+}

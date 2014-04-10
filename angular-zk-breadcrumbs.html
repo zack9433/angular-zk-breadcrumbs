@@ -1,0 +1,8 @@
+<h3>
+  <ol class="breadcrumb">
+    <li ng-repeat="breadcrumb in breadcrumbList" ng-class="{active: $last}">
+      <a ng-if="breadcrumb.state && !$last" ui-sref="{{breadcrumb.state}}">{{breadcrumb.title}}</a>
+      <span ng-show="$last">{{breadcrumb.title}}</span>
+    </li>
+  </ol>
+</h3>
