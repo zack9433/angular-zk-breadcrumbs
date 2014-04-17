@@ -28,10 +28,17 @@
       }
 
       function addBreadcrumb(title, state) {
-        list.push({
-          title: title,
-          state: state
-        });
+        if (state.self.abstract) {
+          list.push({
+            title: title,
+            state: state.breadcrumb.referState
+          });
+        } else {
+          list.push({
+            title: title,
+            state: state.name
+          });
+        }
       }
 
       function generateBreadcrumbs(state, params) {
@@ -53,7 +60,7 @@
               displayName = state.breadcrumb.title;
             }
 
-            addBreadcrumb(displayName, state.name);
+            addBreadcrumb(displayName, state);
           }
         }
       }
